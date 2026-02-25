@@ -1,0 +1,60 @@
+body {
+    font-family: Minecraft, Verdana, sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background: #ffe6f0;
+}
+
+.heart {
+    position: fixed;
+    top: -10px;
+    font-size: 20px;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    color: lightpink;
+}
+
+.rosa {
+    color: hotpink;
+}
+
+
+
+#submit-to-show-message {
+    margin-top: 20px;
+    font-family: Minecraft, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #ff85b3, #ff4d8d);
+    color: white;
+    font-size: 18px;
+    padding: 10px 25px;
+    border: 3px solid #ff2e75;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 0 #cc2960,
+    0 0 15px rgba(255, 105, 180, 0.6);
+}
+
+#submit-to-show-message:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 0 #cc2960,
+    0 0 25px rgba(255, 105, 180, 0.9);
+}
+
+#submit-to-show-message:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #cc2960;
+}
